@@ -1,7 +1,7 @@
-import { HelloWorld } from "./components";
+import { CatBrowser } from "./components";
 
 function App() {
-  return <HelloWorld name="World" />;
+  return <CatBrowser />;
 }
 
 export default App;
