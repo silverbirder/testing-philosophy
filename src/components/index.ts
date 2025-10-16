@@ -1,2 +1,1 @@
-export { CatBrowser } from "./CatBrowser";
 export { HelloWorld } from "./HelloWorld";
