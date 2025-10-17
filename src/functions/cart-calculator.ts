@@ -20,6 +20,7 @@ export const calculateCartTotal = (
   items: CartItem[],
   coupon?: Coupon
 ): number => {
+  // 小計を計算
   const subtotal = calculateSubtotal(items);
   let discountedSubtotal = subtotal;
 
@@ -28,6 +29,7 @@ export const calculateCartTotal = (
     discountedSubtotal = applyCoupon(subtotal, coupon);
   }
 
+  // 税込み価格を計算して返す
   return calculateTotalWithTax(discountedSubtotal);
 };
 
